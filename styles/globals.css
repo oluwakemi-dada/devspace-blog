@@ -1,16 +1,136 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
-a {
-  color: inherit;
-  text-decoration: none;
+html {
+  font-size: 62.5%;
 }
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  background-color: #fff;
+  color: #000;
+  min-height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+
+p {
+  margin: 15px 0;
+  line-height: 1.8;
+}
+
+.container {
+  margin: 3.5rem auto 4.5rem auto;
+  max-width: 150rem;
+}
+
+.blog-text {
+  margin: 2rem 0;
+}
+
+.blog-text ul,
+.blog-text ol {
+  font-size: 110%;
+  line-height: 2.3;
+  font-weight: bold;
+  margin: 10px 0 10px 20px;
+}
+
+.blog-text pre {
+  background: #f4f4f4;
+  padding: 20px;
+  margin: 20px 0;
+  line-height: 2.3;
+}
+
+.blog-text h1 {
+  font-size: 35px;
+}
+
+.blog-text h2,
+.blog-text h3,
+.blog-text h4 {
+  font-size: 27px;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1600px) {
+  .container {
+    max-width: 125rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 110rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 92rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    max-width: 73rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    max-width: 63rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    max-width: 100%;
+    padding: 0 5rem;
+  }
+
+  h1 {
+    font-size: 3.6rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .container {
+    padding: 0 2.7rem;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 3.2rem;
+  }
 }

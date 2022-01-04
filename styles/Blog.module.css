@@ -1,0 +1,167 @@
+/* BLOGS */
+.postsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2.3rem;
+  row-gap: 4.3rem;
+  margin-top: 3rem;
+}
+
+.allPostsBtn {
+  border: 1px solid #111827;
+  width: 100%;
+  padding: 1.4rem 0;
+  text-align: center;
+  transition: all 0.3s;
+  border-radius: 0.5rem;
+  margin-top: 2.5rem;
+  cursor: pointer;
+}
+
+.allPostsBtn:hover {
+  background: #111827;
+  color: #fff;
+}
+
+/* BLOG */
+.contentWrapper {
+  box-shadow: 0 2px 5px rgb(219, 219, 219);
+  margin-top: 2.5rem;
+  padding: 3rem 3.5rem;
+}
+
+.titleCategory {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pageTitle {
+  font-weight: 400;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  margin-top: 1.8rem;
+  border-radius: 0.4rem;
+}
+
+.imageContainer .image {
+  width: 100%;
+  height: 100%;
+  position: relative !important;
+  object-fit: cover;
+  border-radius: 0.4rem;
+}
+
+.authorDate {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: #f3f4f6;
+  padding: 1.2rem 2rem;
+  margin-top: 3.5rem;
+}
+
+.author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.authorImage {
+  border-radius: 50%;
+}
+
+.authorName {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #202020;
+  margin-left: 1.5rem;
+}
+
+.date {
+  font-size: 1.5rem;
+}
+
+/* Page Index */
+.mainAside {
+  display: grid;
+  grid-template-columns: 0.75fr 0.25fr;
+  grid-gap: 4.5rem;
+}
+
+.asideContainer {
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgb(219, 219, 219);
+  padding: 2rem 3.5rem 1.5rem 3.5rem;
+}
+
+.asideTitle {
+  background: #1f2937;
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+  color: #fff;
+  font-weight: 500;
+  font-size: 2.2rem;
+}
+
+.asideCategories li {
+  padding: 1.5rem 1.5rem;
+  border-bottom: 1px solid #dadada;
+  transition: background 0.15s;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.asideCategories li:last-child {
+  border-bottom: 0;
+}
+
+.asideCategories li:hover {
+  background: #f6fafa;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1600px) {
+  .postsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mainAside {
+    grid-template-columns: 0.7fr 0.3fr;
+  }
+}
+
+@media (max-width: 1200px) {
+  .postsGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .mainAside {
+    grid-template-columns: 0.65fr 0.35fr;
+    grid-gap: 10rem;
+  }
+}
+
+@media (max-width: 1000px) {
+
+  .postsGrid {
+    column-gap: 2.3rem;
+  }
+  
+  .mainAside {
+    grid-gap: 5rem;
+    grid-template-columns: 0.58fr 0.42fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .mainAside {
+    grid-template-columns: 1fr;
+  }
+}

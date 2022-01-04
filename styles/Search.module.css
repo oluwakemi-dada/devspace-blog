@@ -1,0 +1,78 @@
+.wrapper {
+  background: #4b5563;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+}
+
+.searchContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 150rem;
+}
+
+.formIcon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #fff;
+  border-radius: 5rem;
+  padding: 0.5rem 1rem;
+}
+
+.searchInput {
+  padding: 0.5rem 1.5rem;
+  margin-right: 1rem;
+  border: 0;
+  outline: 0;
+  color: #626c7a;
+  width: 20rem;
+}
+
+@media (max-width: 1600px) {
+  .searchContainer {
+    max-width: 125rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .searchContainer {
+    max-width: 110rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .searchContainer {
+    max-width: 92rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .searchContainer {
+    max-width: 73rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .searchContainer {
+    max-width: 63rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .searchContainer {
+    max-width: 100%;
+    padding: 0 5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .searchContainer {
+    padding: 0 2.7rem;
+  }
+}

@@ -1,0 +1,82 @@
+.postContainer {
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgb(219, 219, 219);
+  padding: 4rem 3.5rem;
+}
+
+.postImage {
+  border-radius: 0.4rem;
+}
+
+.dateCategory {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.dateCategory span {
+  color: #3f3f41;
+  font-weight: 300;
+}
+
+.postTitle {
+  font-size: 2.3rem;
+  color: #374151;
+  font-weight: 700;
+  margin-top: 0.3rem;
+  border-bottom: 1px solid #fff;
+  transition: all 0.3s;
+}
+
+.postTitle:hover {
+  border-bottom: 1px solid #374151;
+}
+
+.postexcerpt {
+  font-size: 1.5rem;
+  line-height: 1.85;
+  margin: 0.7rem 0;
+  color: #3f3f41;
+}
+
+.readmoreAuthor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+}
+
+.readmore {
+  font-size: 1.5rem;
+  transition: color 0.15s;
+}
+
+.readmore:hover {
+  color: #5082ef;
+}
+
+.author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.authorImage {
+  border-radius: 50%;
+}
+
+.authorName {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #202020;
+  margin-left: 1.5rem;
+}
+
+@media (max-width: 450px) {
+  .author > *:first-child {
+    display: none !important;
+  }
+}

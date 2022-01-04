@@ -1,0 +1,54 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
+.logo {
+  background: #1f2937;
+  border-radius: 1.5rem;
+}
+
+.content h1 {
+  font-size: 5.5rem;
+  font-weight: 400;
+  margin: 0.2rem 0;
+}
+
+.content h2 {
+  font-size: 3.2rem;
+  font-weight: 400;
+  color: #95989c;
+}
+
+@media (max-width: 800px) {
+  .content h1 {
+    font-size: 5rem;
+  }
+
+  .content h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .content h1 {
+    font-size: 4.5rem;
+  }
+
+  .content h2 {
+    font-size: 2.7rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .content h1 {
+    font-size: 4.3rem;
+  }
+
+  .content h2 {
+    font-size: 2.5rem;
+  }
+}

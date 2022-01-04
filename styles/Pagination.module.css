@@ -1,0 +1,29 @@
+.wrapper {
+  margin-top: 3rem;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex li {
+  margin-right: 0.4rem;
+  font-size: 1.55rem;
+}
+
+.flex li:last-child {
+  margin-right: 0;
+}
+
+.flex li {
+  border: 1.2px solid rgb(207, 204, 204);
+  padding: 0.3rem 1.2rem;
+  transition: background 0.1s;
+  cursor: pointer;
+}
+
+.flex li:hover {
+  background: #eff1f3;
+}

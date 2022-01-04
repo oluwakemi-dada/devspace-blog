@@ -1,8 +1,22 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import '@/styles/globals.css';
+import { useEffect, useState } from 'react';
+import type { AppProps } from 'next/app';
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
-}
+const MyApp = ({ Component, pageProps }: AppProps) => {
+  const [isServer, setIsServer] = useState(true);
 
-export default MyApp
+  useEffect(() => {
+    const jssStyles = document.querySelector('#jss-server-side');
+    if (jssStyles && jssStyles.parentNode) {
+      jssStyles.parentNode.removeChild(jssStyles);
+    }
+    setIsServer(false);
+  }, []);
+
+  if (isServer) {
+    return <></>;
+  }
+  return <Component {...pageProps} />;
+};
+
+export default MyApp;

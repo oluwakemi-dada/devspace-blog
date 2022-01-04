@@ -1,0 +1,24 @@
+.card {
+  padding: 4rem;
+  box-shadow: 0 2px 8px rgb(219, 219, 219);
+  margin-top: 2rem;
+}
+
+.cardTitle {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.about {
+  margin: 2rem 0;
+}
+
+.version {
+  font-weight: 700;
+}
+
+@media (max-width: 450px) {
+  .card {
+    padding: 2.5rem;
+  }
+}
