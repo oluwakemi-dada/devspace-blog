@@ -8,7 +8,9 @@ const SearchResults: FC<{ results: PostsData[] }> = ({ results }) => {
 
   return (
     <div className={styles.wrapper}>
-      <h3 className={styles.resultTitle}>{results.length} Results</h3>
+      <h3 className={styles.resultTitle}>
+        {results.length} {results.length === 1 ? ' Result' : ' Results'}
+      </h3>
       {results.map((result, index) => (
         <div key={index} className={styles.result}>
           <Post post={result} compact={true} />
