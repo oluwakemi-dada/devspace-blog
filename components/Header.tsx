@@ -9,7 +9,7 @@ const Header: FC = () => {
       <div className={styles.headerContent}>
         <Link href='/'>
           <a className={styles.logo}>
-            <Image src='/images/logo.png' width={40} height={40} alt='logo' />
+            <Image src='/images/logo.png' width={35} height={35} alt='logo' />
             <span className=''>DevSpace</span>
           </a>
         </Link>

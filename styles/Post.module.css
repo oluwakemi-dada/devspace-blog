@@ -75,8 +75,18 @@
   margin-left: 1.5rem;
 }
 
+@media (max-width: 550px) {
+  .postContainer {
+    padding: 4rem 2.8rem;
+  }
+}
+
 @media (max-width: 450px) {
   .author > *:first-child {
     display: none !important;
+  }
+
+  .postContainer {
+    padding: 4rem 2rem;
   }
 }

@@ -76,3 +76,9 @@
     padding: 0 2.7rem;
   }
 }
+
+@media (max-width: 500px) {
+  .searchContainer {
+    justify-content: center;
+  }
+}

@@ -104,3 +104,14 @@
     margin-right: 2.5rem;
   }
 }
+
+@media (max-width: 500px) {
+  .logo span {
+    font-size: 1.8rem;
+    margin-left: 0.5rem;
+  }
+
+  .navLink {
+    font-size: 1.4rem;
+  }
+}
