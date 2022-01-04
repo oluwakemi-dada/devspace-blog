@@ -23,6 +23,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/api/search.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/api/search.js", "scripts/cache.js"],
   "exclude": ["node_modules"]
 }
